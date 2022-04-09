@@ -21,7 +21,7 @@
 title: David Layden
 email: davidlayden1@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  David Layden's website.
+  David Layden's personal website.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: davidlayden
