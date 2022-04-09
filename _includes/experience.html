@@ -1,29 +1,53 @@
-<!-- Portfolio Grid Section -->
-    <section id="experience" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Experience</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-            {% for post in site.posts %}
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>{{ post.title }}</h4>
-                        <p class="text-muted">{{ post.subtitle }}</p>
-                    </div>
-                </div>
-            {% endfor %}
+<section id="experience" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Experience</h2>
+                <h3 class="section-subheading text-muted"></h3>
             </div>
         </div>
-    </section>
+        
+        <div class="row">
+            <div class="col">
+                <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
+                    <div class="timeline-step">
+                        <div class="timeline-content">
+                            <div class="inner-circle justify-content-center align-items-center">2014</div>
+                            <h4 class="service-heading">University of Waterloo</h4>
+                            <p class="h7 text-muted">BS, Mathematical Physics</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-content">
+                            <div class="inner-circle justify-content-center align-items-center"> 2016</div>
+                            <h4 class="service-heading">University of Waterloo</h4>
+                            <p class="h7 text-muted">
+                                <a href="https://uwspace.uwaterloo.ca/bitstream/handle/10012/10645/Layden_David.pdf?sequence=1" target="_blank">
+                                    MMath, Applied Math (Quantum Info)
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-content">
+                            <div class="inner-circle justify-content-center align-items-center">2020</div>
+                            <h4 class="service-heading">Massachusetts Institute of Technology</h4>
+                            <p class="h7 text-muted">
+                                <a href="http://oastats.mit.edu/bitstream/handle/1721.1/127314/1191905609-MIT.pdf?sequence=1&isAllowed=y" target="_blank">
+                                    PhD, Quantum Science & Engineering
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-step mb-0">
+                        <div class="timeline-content">
+                            <div class="inner-circle-highlight" justify-content-center align-items-center>now</div>
+                            <h4 class="service-heading">IBM Quantum</h4>
+                            <p class="h7 text-muted">Research Scientist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

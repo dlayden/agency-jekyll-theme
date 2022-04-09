@@ -346,6 +346,14 @@ section h3.section-subheading {
     font-weight: 400;
 }
 
+section h3.section-contact {
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: {{ site.data.template.font.secondary }};
+    font-size: 16px;
+    font-weight: 500;
+}
+
 @media(min-width:768px) {
     section {
         padding: 150px 0;
@@ -659,16 +667,6 @@ aside.clients img {
     margin: 50px auto;
 }
 
-section#contact {
-    background-color:  #{{ site.data.template.color.primary }};
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-section#contact .section-heading {
-    color: #fff;
-}
-
 section#contact .form-group {
     margin-bottom: 25px;
 }
@@ -866,4 +864,79 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
+}
+
+
+
+
+body{margin-top:20px;}
+.timeline-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.timeline-steps .timeline-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem
+}
+
+@media (min-width:768px) {
+    .timeline-steps .timeline-step:not(:last-child):after {
+        content: "";
+        display: block;
+        border-top: .5rem dotted #{{ site.data.template.color.primary }};
+        width: 10rem;
+        position: absolute;
+        left: 17rem;
+        top: 2.8rem
+    }
+    .timeline-steps .timeline-step:not(:first-child):before {
+        content: "";
+        display: block;
+        border-top: .5rem dotted #{{ site.data.template.color.primary }};
+        width: 9rem;
+        position: absolute;
+        right: 17rem;
+        top: 2.8rem
+    }
+}
+
+.timeline-steps .timeline-content {
+    width: 25.8rem;
+    text-align: center
+}
+
+.timeline-steps .timeline-content .inner-circle {
+    border-radius: 6rem;
+    height: 6rem;
+    width: 6rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    opacity=1;
+    background-color: #fff;
+    color: #{{ site.data.template.color.primary }};
+    border: 3px solid #{{ site.data.template.color.primary }};
+    font-size: 20px;
+    font-weight: 700;
+    font-family: {{ site.data.template.font.primary }}
+}
+
+.timeline-steps .timeline-content .inner-circle-highlight {
+    border-radius: 6rem;
+    height: 6rem;
+    width: 6rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #{{ site.data.template.color.primary }};
+    opacity=1;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: {{ site.data.template.font.primary }}
 }
