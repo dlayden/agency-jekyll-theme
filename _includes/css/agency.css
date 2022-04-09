@@ -889,20 +889,12 @@ body{margin-top:20px;}
         content: "";
         display: block;
         border-top: .5rem dotted #{{ site.data.template.color.primary }};
-        width: 10rem;
+        width: 19rem;
         position: absolute;
-        left: 17rem;
+        left: 17.25rem;
         top: 2.8rem
     }
-    .timeline-steps .timeline-step:not(:first-child):before {
-        content: "";
-        display: block;
-        border-top: .5rem dotted #{{ site.data.template.color.primary }};
-        width: 9rem;
-        position: absolute;
-        right: 17rem;
-        top: 2.8rem
-    }
+
 }
 
 .timeline-steps .timeline-content {
@@ -911,7 +903,7 @@ body{margin-top:20px;}
 }
 
 .timeline-steps .timeline-content .inner-circle {
-    border-radius: 6rem;
+    border-radius: 50%;
     height: 6rem;
     width: 6rem;
     display: inline-flex;
@@ -927,7 +919,7 @@ body{margin-top:20px;}
 }
 
 .timeline-steps .timeline-content .inner-circle-highlight {
-    border-radius: 6rem;
+    border-radius: 50%;
     height: 6rem;
     width: 6rem;
     display: inline-flex;
